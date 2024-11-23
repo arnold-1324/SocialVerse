@@ -4,8 +4,10 @@ import GridPostList from "./GridPostList";
 
 type searchResultsProps = {
   isSearchFetching: boolean;
-  searchedPosts: Models.Document[];
+  searchedPosts: { documents: Models.Document[] };
 }
+
+
 
 const SearchResults = ({ isSearchFetching, searchedPosts }:searchResultsProps) => {
 
@@ -13,7 +15,7 @@ const SearchResults = ({ isSearchFetching, searchedPosts }:searchResultsProps) =
 
   if(searchedPosts && searchedPosts.documents.length > 0 ){
     return (
-      <GridPostList  posts={searchedPosts.documents} />
+      <GridPostList  posts={searchedPosts.documents}  />
     )
      
     
