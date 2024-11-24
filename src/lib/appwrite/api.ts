@@ -319,25 +319,28 @@ export  async function deletePost(postId: string, imageId: string){
   }
 }
 
-export async function getInfinitePosts({ pageParam }:{pageParam: number}){
-  const queries: any[]= [Query.orderDesc('$updatedAt'),Query.limit(10)]
+export async function getInfinitePosts({ pageParam }: { pageParam?: string }) {
+  const queries: any[] = [Query.orderDesc('$updatedAt'), Query.limit(10)];
 
-  if(pageParam){
-    queries.push(Query.cursorAfter(pageParam.toString()));
+  if (pageParam) {
+    queries.push(Query.cursorAfter(pageParam)); 
   }
-  try{
+
+  try {
     const posts = await databases.listDocuments(
       appwriteConfig.databaseId,
       appwriteConfig.postCollectionId,
       queries
-    )
-    if(!posts) throw Error;
+    );
+
+    if (!posts) throw new Error('No posts found');
+
     return posts;
-  }catch(error){
-    console.log(error);
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    throw new Error('Failed to fetch posts'); 
   }
 }
-
 export async function searchPosts(searchTerm: string){
 
   try{
