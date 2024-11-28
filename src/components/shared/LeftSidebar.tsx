@@ -28,11 +28,12 @@ const LeftSidebar = () => {
     <nav className="leftsidebar">
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
-          <img
-            src="/assets/images/logo.svg"
+        <img
+            src="/assets/images/logo.webp"
             alt="logo"
-            width={170}
-            height={36}
+            width={55}
+            height={55}
+            className="rounded-full"
           />
         </Link>
 
