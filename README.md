@@ -1,78 +1,65 @@
-# 🌌 SocialVerse
+# 🌌 **SocialVerse**  
 
-**SocialVerse** is a next-generation social media platform designed to provide seamless interactions and foster vibrant communities. Built with cutting-edge technologies, it features a responsive design, secure user management, and real-time updates, ensuring an engaging experience for users on any device.
+Welcome to **SocialVerse**, a modern social media platform crafted to deliver seamless interactions and engaging user experiences. Built with cutting-edge technologies and a scalable backend, this project showcases the fusion of robust functionality and sleek design.  
 
 ---
 
-## 🚀 Key Features
+## 🚀 **Key Features**  
 
 - **🔒 User Authentication**  
-  Secure login and signup powered by token-based authentication for a seamless and safe user experience.
+  Secure login and signup functionality powered by token-based authentication.  
 
 - **✍️ Post Creation & Interaction**  
-  - Users can create, edit, and delete posts effortlessly.  
-  - Engage with posts through likes and comments.
+  Users can create posts, comment, and engage with likes for dynamic social interaction.  
 
-- **📡 Real-time Updates**  
-  Powered by modern frameworks, enabling instant notifications, dynamic content loading, and more.
+- **⚡ Real-time Updates**  
+  Real-time notifications and interactions enabled through modern frameworks.  
 
 - **📱 Responsive Design**  
-  Designed to look stunning and function perfectly on both desktop and mobile devices.
+  Optimized for flawless usability on both desktop and mobile devices.  
 
-- **☁️ Serverless Deployment**  
-  Hosted on AWS Amplify, ensuring scalability, high availability, and CI/CD integration for continuous improvement.
-
----
-
-## 🛠️ Tech Stack
-
-### **Frontend**
-- **Framework**: React with TypeScript  
-- **State Management**: Redux Toolkit  
-- **Styling**: Tailwind CSS for clean and consistent UI  
-- **Animations**: Framer Motion for smooth transitions  
-
-### **Backend**
-- **Web API**: .NET Core Web API for RESTful services  
-- **Database**: MongoDB for efficient and scalable data storage  
-
-### **DevOps & Deployment**
-- **Hosting**: AWS Amplify for scalable serverless hosting  
-- **CI/CD**: Automated pipelines for seamless updates  
-- **Environment Configuration**: `.env.local` for secure management of API keys and secrets  
+- **☁️ Deployed on AWS Amplify**  
+  Demonstrating serverless architecture with auto-scaling and CI/CD pipelines.  
 
 ---
 
-## 🌐 Live Demo
+## 🛠️ **Tech Stack**  
 
-Experience SocialVerse live: [**SocialVerse App**](https://main.d24v2clqh5zmxw.amplifyapp.com/)
-
----
-
-## 🖼️ Screenshots
-
-### **Homepage View**  
-Elegant, user-friendly homepage design:  
-![Homepage](public/assets/images/Home.png)
-
-### **Post Interaction Page**  
-Dynamic post creation and engagement features:  
-![Post Interaction](public/assets/images/uploadPage.png)
-
-### **Responsive Design Example**  
-Optimized for any screen size:  
-![Responsive Design](public/assets/images/image.png)
+- **Frontend**: React/TypeScript for highly interactive user interfaces.  
+- **Backend**: Web API services and TanStack Query for robust and scalable backend operations.  
+- **Hosting/Deployment**: AWS Amplify ensures seamless scaling and CI/CD integration.  
 
 ---
 
-## 🛠️ Local Setup & Configuration
+## 📸 **Screenshots**  
 
-### Prerequisites
-1. Node.js and npm installed  
-2. MongoDB running locally or a cloud instance  
+### 🏠 **Homepage View**  
+![Homepage](public/assets/images/Home.png)  
 
-### Steps to Run Locally
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/arnold-1324/SocialVerse.git
-   cd SocialVerse
+### 🖼️ **Post Interaction Page**  
+![Post Interaction](public/assets/images/uploadPage.png)  
+
+### 💻 **Responsive Design Example**  
+![Responsive Design](public/assets/images/image.png)  
+
+---
+
+## 🌐 **Deployment Link**  
+
+🚀 Explore the live app here: [**SocialVerse Live App**](https://main.d24v2clqh5zmxw.amplifyapp.com/)  
+
+---
+
+## 🛡️ **Environment Variables Setup**  
+
+Before running the project locally, ensure you configure the `.env.local` file with the required variables:  
+
+```bash
+# Appwrite Configuration  
+VITE_APPWRITE_URL=<Your Appwrite Endpoint URL>  
+VITE_APPWRITE_PROJECT_ID=<Your Project ID>  
+VITE_APPWRITE_STORAGE_ID=<Your Storage Bucket ID>  
+VITE_APPWRITE_DATABASE_ID=<Your Database ID>  
+VITE_APPWRITE_SAVES_COLLECTION_ID=<Your Saves Collection ID>  
+VITE_APPWRITE_USER_COLLECTION_ID=<Your User Collection ID>  
+VITE_APPWRITE_POST_COLLECTION_ID=<Your Post Collection ID>  
