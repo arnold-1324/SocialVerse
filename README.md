@@ -35,16 +35,16 @@ SocialVerse is a modern social media platform designed to provide users with sea
 
 - **Homepage View**:  
   Add an image of the homepage here.  
-  ![Homepage]([path/to/homepage-screenshot.png](https://github.com/user-attachments/assets/149509fa-9cdb-4d4e-80a5-3e36bbc68000))
+  ![Homepage]([public/assets/images/Home.png](https://github.com/user-attachments/assets/149509fa-9cdb-4d4e-80a5-3e36bbc68000))
 
 - **Post Interaction Page**:  
   Add an image showing the post interaction feature.  
-  ![Post Interaction](![Uploading image.png…]()
+  ![Post Interaction](![Uploading image.png…]([public/assets/images/uploadPage.png])
 )
 
 - **Responsive Design Example**:  
   Show the platform on desktop and mobile.  
-  ![Responsive Design](path/to/responsive-design-screenshot.png)
+  ![Responsive Design](public/assets/images/image.png)
 
 ---
 
