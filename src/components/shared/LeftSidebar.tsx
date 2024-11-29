@@ -24,6 +24,7 @@ const LeftSidebar = () => {
     navigate("/sign-in");
   };
 
+
   return (
     <nav className="leftsidebar">
       <div className="flex flex-col gap-11">
@@ -83,7 +84,7 @@ const LeftSidebar = () => {
         </ul>
       </div>
 
-      <Button
+      <Button 
         variant="ghost"
         className="shad-button_ghost"
         onClick={(e) => handleSignOut(e)}>
